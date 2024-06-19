@@ -21,7 +21,7 @@ public class MenuController {
     }
 
     @FXML
-    public void quitGame(ActionEvent event) {
+    public void quitGame() {
         startfx.close();
     }
 }
