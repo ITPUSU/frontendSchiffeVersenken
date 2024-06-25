@@ -3,20 +3,25 @@ package com.example.schiffeFE;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 
-import java.io.IOException;
 
-
-public class StartController {
+public class LauncherController {
     @FXML
-    private Label welcomeText;
+    private Launcher launcher = new Launcher();
 
+    /*
     @FXML
     protected void onStartButtonClick() {
         welcomeText.setText("Welcome to ITPUSU Battleships");
         try {
-            BattleShip.initiateMenu();
+            Launcher.initiateMenu();
         }catch(IOException exception) {
             throw new RuntimeException(exception);
         }
+    }
+} */
+
+    @FXML
+    public void quitGame() {
+        launcher.close();
     }
 }
